@@ -1,0 +1,324 @@
+[0;32mI (123) esp_image: segment 4: paddr=0003bbc4 vaddr=403840b0 sizeESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40382b14
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f58
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  5 2026 17:28:13[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0ac3ch ( 44092) map[0m
+[0;32mI (90) esp_image: segment 1: paddr=0001ac64 vaddr=3fc8be00 size=012fch (  4860) load[0m
+[0;32mI (92) esp_image: segment 2: paddr=0001bf68 vaddr=40380000 size=040b0h ( 16560) load[0m
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1bb9ch (113564) map[0m
+[0;32mI (123) esp_image: segment 4: paddr=0003bbc4 vaddr=403840b0 size=07d10h ( 32016) load[0m
+[0;32mI (130) esp_image: segment 5: paddr=000438dc vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (134) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (134) boot: Disabling RNG early entropy source...[0m
+[0;32mI (148) cpu_start: Unicore app[0m
+[0;32mI (157) cpu_start: Pro cpu start user code[0m
+[0;32mI (157) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (157) app_init: Application information:[0m
+[0;32mI (158) app_init: Project name:     blink[0m
+[0;32mI (161) app_init: App version:      1[0m
+[0;32mI (164) app_init: Compile time:     Mar  5 2026 17:28:06[0m
+[0;32mI (169) app_init: ELF file SHA256:  f67fbaaf5...[0m
+[0;32mI (173) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (177) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (181) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (185) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (189) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (195) heap_init: At 3FC8E000 len 00032000 (200 KiB): RAM[0m
+[0;32mI (200) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (206) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (212) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (218) spi_flash: detected chip: generic[0m
+[0;32mI (221) spi_flash: flash io: dio[0m
+[0;33mW (224) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (236) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (243) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (249) main_task: Started on CPU0[0m
+[0;32mI (249) main_task: Calling app_main()[0m
+[0;32mI (249) test: CONFIGURING BMI160[0m
+[0;32mI (249) i2cdev: [Port 0] First initialization. Configuring bus with SDA=3, SCL=4 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (259) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (279) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3fc905a8).[0m
+[0;32mI (289) i2cdev: [0x69 at 0] Device added successfully (Device Handle: 0x3fc90a70, Speed: 1000000 Hz).[0m
+Device ID: 0xd1
+[0;32mI (2279) test: Accel: +0.001 -0.001 -0.002 Gyro: +0.001 +0.001 +0.004[0m
+
+[0;32mI (3279) test: Accel: -0.005 -0.001 -0.000 Gyro: +0.009 +0.012 -0.000[0m
+
+[0;32mI (4279) test: Accel: +0.003 +0.001 +0.001 Gyro: +0.005 +0.001 +0.007[0m
+
+[0;32mI (5279) test: Accel: +0.001 -0.001 +0.000 Gyro: -0.003 +0.001 +0.004[0m
+
+[0;32mI (6279) test: Accel: +0.000 +0.002 +0.001 Gyro: +0.016 -0.007 -0.008[0m
+
+[0;32mI (7279) test: Accel: +0.000 +0.001 +0.000 Gyro: -0.003 +0.001 -0.012[0m
+
+[0;32mI (8279) test: Accel: +0.001 -0.002 -0.000 Gyro: -0.010 +0.009 +0.004[0m
+
+[0;32mI (9279) test: Accel: -0.001 -0.001 +0.002 Gyro: +0.005 +0.001 +0.004[0m
+
+[0;32mI (10279) test: Accel: +0.002 -0.001 +0.000 Gyro: -0.010 -0.007 +0.007[0m
+
+[0;32mI (11279) test: Accel: +0.003 -0.001 +0.000 Gyro: +0.005 -0.003 -0.004[0m
+
+[0;32mI (12279) test: Accel: +0.002 +0.001 +0.001 Gyro: -0.003 -0.003 +0.007[0m
+
+[0;32mI (13279) test: Accel: +0.001 -0.000 +0.001 Gyro: +0.001 +0.001 -0.008[0m
+
+[0;32mI (14279) test: Accel: +0.001 -0.001 +0.002 Gyro: +0.005 +0.001 +0.015[0m
+
+[0;32mI (15279) test: Accel: +0.000 -0.004 -0.000 Gyro: +0.024 -0.003 -0.008[0m
+
+[0;32mI (16279) test: Accel: -0.000 -0.000 -0.001 Gyro: +0.020 +0.012 +0.015[0m
+
+[0;32mI (17279) test: Accel: +0.001 -0.001 +0.002 Gyro: +0.009 +0.001 -0.000[0m
+
+[0;32mI (18279) test: Accel: -0.001 +0.000 -0.000 Gyro: -0.006 -0.011 -0.000[0m
+
+[0;32mI (19279) test: Accel: -0.001 +0.000 -0.001 Gyro: +0.013 +0.016 -0.000[0m
+
+[0;32mI (20279) test: Accel: -0.000 +0.001 +0.001 Gyro: +0.005 -0.003 +0.004[0m
+
+[0;32mI (21279) test: Accel: +0.004 +0.002 +0.001 Gyro: -0.003 +0.001 -0.000[0m
+
+[0;32mI (22279) test: Accel: +0.001 -0.000 +0.001 Gyro: +0.020 -0.011 +0.004[0m
+
+[0;32mI (23279) test: Accel: -0.000 -0.000 -0.000 Gyro: +0.013 +0.001 -0.012[0m
+
+[0;32mI (24279) test: Accel: -0.001 -0.001 +0.003 Gyro: +0.016 +0.001 +0.007[0m
+
+[0;32mI (25279) test: Accel: -0.001 -0.001 +0.001 Gyro: +0.001 +0.001 -0.000[0m
+
+[0;32mI (26279) test: Accel: +0.004 -0.000 +0.002 Gyro: +0.005 +0.001 -0.000[0m
+
+[0;32mI (27279) test: Accel: -0.001 +0.002 +0.002 Gyro: -0.006 +0.012 +0.007[0m
+
+[0;32mI (28279) test: Accel: +0.001 -0.000 -0.001 Gyro: +0.009 +0.009 +0.007[0m
+
+[0;32mI (29279) test: Accel: +0.001 -0.001 +0.001 Gyro: +0.001 -0.018 -0.004[0m
+
+[0;32mI (30279) test: Accel: +0.001 -0.001 +0.002 Gyro: +0.009 +0.001 +0.004[0m
+
+[0;32mI (31279) test: Accel: -0.000 -0.000 -0.001 Gyro: -0.003 -0.007 -0.004[0m
+
+[0;32mI (32279) test: Accel: -0.904 -0.028 -0.509 Gyro: -0.857 +4.395 -0.035[0m
+
+[0;32mI (33279) test: Accel: -0.928 -0.009 -0.627 Gyro: -0.304 +1.424 +0.313[0m
+
+[0;32mI (34279) test: Accel: -0.942 -0.014 -0.670 Gyro: +0.020 +0.329 +0.057[0m
+
+[0;32mI (35279) test: Accel: -0.947 -0.011 -0.677 Gyro: +0.131 -0.220 -0.077[0m
+
+[0;32mI (36279) test: Accel: -0.796 +0.060 -0.379 Gyro: +2.752 -13.919 +0.068[0m
+
+[0;32mI (37279) test: Accel: +0.685 -0.205 -0.402 Gyro: -6.812 -36.281 +7.831[0m
+
+[0;32mI (38279) test: Accel: +0.891 -0.387 -1.001 Gyro: +0.966 -0.163 +0.244[0m
+
+[0;32mI (39279) test: Accel: +0.936 -0.417 -0.985 Gyro: +0.978 -6.194 -1.522[0m
+
+[0;32mI (40279) test: Accel: +0.919 -0.418 -1.010 Gyro: +0.249 +0.501 -0.107[0m
+
+[0;32mI (41279) test: Accel: +0.918 -0.418 -0.962 Gyro: -0.377 -0.236 -0.058[0m
+
+[0;32mI (42279) test: Accel: +0.774 -0.411 -0.903 Gyro: +2.862 +2.107 -1.938[0m
+
+[0;32mI (43279) test: Accel: +1.253 -0.356 -2.325 Gyro: -34.835 -5.138 -0.237[0m
+
+[0;32mI (44279) test: Accel: +1.973 -0.542 -1.704 Gyro: -19.412 -27.034 -13.100[0m
+
+[0;32mI (45279) test: Accel: -0.366 +0.125 +0.870 Gyro: +53.899 +22.889 +25.131[0m
+
+[0;32mI (46279) test: Accel: +0.184 -0.093 +0.508 Gyro: +15.790 +23.095 +1.308[0m
+
+[0;32mI (47279) test: Accel: -0.289 -0.005 +0.979 Gyro: +29.313 +16.843 +1.484[0m
+
+[0;32mI (48279) test: Accel: +0.354 +0.200 -0.050 Gyro: -38.722 -1.208 -24.193[0m
+
+[0;32mI (49279) test: Accel: +1.647 -0.183 -1.122 Gyro: -10.642 +17.415 -4.654[0m
+
+[0;32mI (50279) test: Accel: -0.730 -0.053 +0.247 Gyro: -10.348 -6.499 -15.698[0m
+
+[0;32mI (51279) test: Accel: +0.759 -0.163 -0.421 Gyro: +19.773 -1.872 +33.134[0m
+
+[0;32mI (52279) test: Accel: -0.195 +0.002 +0.277 Gyro: -3.917 -7.110 -7.962[0m
+
+[0;32mI (53279) test: Accel: +1.113 -0.099 -0.839 Gyro: -30.150 -6.648 -20.546[0m
+
+[0;32mI (54279) test: Accel: +1.008 -0.054 -0.743 Gyro: +36.905 +2.519 +21.496[0m
+
+[0;32mI (55279) test: Accel: +0.093 -0.141 +0.171 Gyro: +1.401 +18.872 +8.228[0m
+
+[0;32mI (56279) test: Accel: +0.843 -0.071 -0.477 Gyro: -7.468 -124.850 -21.782[0m
+
+[0;32mI (57279) test: Accel: -0.840 -0.120 -1.217 Gyro: +6.482 -87.504 -2.625[0m
+
+[0;32mI (58279) test: Accel: -0.741 -0.258 -1.080 Gyro: -20.285 +40.868 +18.676[0m
+
+[0;32mI (59279) test: Accel: +0.946 -0.076 -0.929 Gyro: +1.462 -16.017 -0.737[0m
+
+[0;32mI (60279) test: Accel: +0.985 -0.081 -0.791 Gyro: -0.628 +0.627 -0.019[0m
+
+[0;32mI (61279) test: Accel: +0.985 -0.076 -0.788 Gyro: +0.833 -0.682 +0.072[0m
+
+[0;32mI (62279) test: Accel: +0.966 -0.077 -0.870 Gyro: -0.560 -1.002 +0.431[0m
+
+[0;32mI (63279) test: Accel: +1.161 -0.012 -0.047 Gyro: +22.412 -124.431 -21.397[0m
+
+[0;32mI (64279) test: Accel: +1.128 +0.003 -0.582 Gyro: -4.863 +59.293 +4.566[0m
+
+[0;32mI (65279) test: Accel: +1.121 -0.052 +0.167 Gyro: +5.071 -124.854 -13.581[0m
+
+[0;32mI (66279) test: Accel: -0.071 +0.568 -0.123 Gyro: +28.684 +21.542 +2.121[0m
+
+[0;32mI (67279) test: Accel: -0.006 +0.706 +0.729 Gyro: +68.746 +19.639 +12.855[0m
+
+[0;32mI (68279) test: Accel: +0.220 +1.182 +0.979 Gyro: +88.048 +1.645 +15.949[0m
+
+[0;32mI (69279) test: Accel: +0.216 +0.894 -0.031 Gyro: -36.986 +13.383 -17.712[0m
+
+[0;32mI (70279) test: Accel: -0.275 -0.311 -1.085 Gyro: -29.132 -16.006 -2.873[0m
+
+[0;32mI (71279) test: Accel: +0.119 +0.994 +0.979 Gyro: +13.086 -5.988 +4.799[0m
+
+[0;32mI (72279) test: Accel: +0.562 +0.153 -0.172 Gyro: +0.177 -9.948 -1.282[0m
+
+[0;32mI (73279) test: Accel: +0.609 -0.193 +0.232 Gyro: -23.658 -24.810 -11.174[0m
+
+[0;32mI (74279) test: Accel: +1.059 -0.360 +0.455 Gyro: +18.663 -11.397 -18.143[0m
+
+[0;32mI (75279) test: Accel: -1.791 +0.320 -0.379 Gyro: -10.005 +5.769 +58.777[0m
+
+[0;32mI (76279) test: Accel: +0.627 +0.224 +0.973 Gyro: +36.412 +6.703 -46.219[0m
+
+[0;32mI (77279) test: Accel: -0.009 +0.048 +0.023 Gyro: -3.444 -0.842 +0.740[0m
+
+[0;32mI (78279) test: Accel: +0.004 -0.001 -0.001 Gyro: -0.006 -0.003 +0.015[0m
+
+[0;32mI (79279) test: Accel: +0.003 -0.003 -0.000 Gyro: +0.005 +0.009 -0.008[0m
+
+[0;32mI (80279) test: Accel: +0.003 -0.003 -0.002 Gyro: +0.016 +0.134 -0.000[0m
+
+[0;32mI (81279) test: Accel: -0.707 -0.018 -0.437 Gyro: -0.182 +59.857 -1.671[0m
+
+[0;32mI (82279) test: Accel: -0.941 -0.022 -0.657 Gyro: +0.085 +0.501 -0.031[0m
+
+[0;32mI (83279) test: Accel: -0.956 -0.025 -0.712 Gyro: -0.022 +0.058 -0.008[0m
+
+[0;32mI (84279) test: Accel: -1.039 -0.080 -1.005 Gyro: +0.337 -1.002 +0.595[0m
+
+[0;32mI (85279) test: Accel: -1.033 -0.088 -0.974 Gyro: +0.154 -0.163 +1.342[0m
+
+[0;32mI (86279) test: Accel: -1.005 -0.080 -0.966 Gyro: +0.001 -0.728 +0.007[0m
+
+[0;32mI (87279) test: Accel: -1.010 -0.090 -0.914 Gyro: -0.193 -1.712 +0.324[0m
+
+[0;32mI (88279) test: Accel: -1.002 -0.077 -0.865 Gyro: -0.258 -0.239 +0.248[0m
+
+[0;32mI (89279) test: Accel: -0.950 -0.082 -0.812 Gyro: +0.089 -0.564 -0.325[0m
+
+[0;32mI (90279) test: Accel: -0.956 -0.071 -0.804 Gyro: +0.131 -0.594 -0.290[0m
+
+[0;32mI (91279) test: Accel: -0.999 -0.069 -0.799 Gyro: +0.028 +0.489 +0.320[0m
+
+[0;32mI (92279) test: Accel: -0.949 -0.068 -0.795 Gyro: +0.352 +0.356 -0.645[0m
+
+[0;32mI (93279) test: Accel: +0.864 +0.055 -0.724 Gyro: +1.828 -8.567 +11.688[0m
+
+[0;32mI (94279) test: Accel: +0.957 +0.063 -0.703 Gyro: +0.104 -0.384 +0.179[0m
+
+[0;32mI (95279) test: Accel: +0.957 +0.060 -0.712 Gyro: -0.472 -0.121 +0.126[0m
+
+[0;32mI (96279) test: Accel: +0.081 -0.038 +0.072 Gyro: +4.743 +2.480 +3.280[0m
+
+[0;32mI (97279) test: Accel: +0.096 -0.030 -0.937 Gyro: -22.754 -4.653 -4.303[0m
+
+[0;32mI (98279) test: Accel: +0.047 +0.023 -0.016 Gyro: -0.312 +0.440 -0.000[0m
+
+[0;32mI (99279) test: Accel: +0.035 +0.015 -0.012 Gyro: -0.308 +0.028 +0.038[0m
+
+[0;32mI (100279) test: Accel: +0.043 +0.012 +0.004 Gyro: -0.109 +0.524 +0.221[0m
+
+[0;32mI (101279) test: Accel: +0.037 +0.023 -0.008 Gyro: +0.280 +0.615 -0.069[0m
+
+[0;32mI (102279) test: Accel: +0.072 +0.080 -1.816 Gyro: +19.654 +14.062 +10.387[0m
+
+[0;32mI (103279) test: Accel: +0.271 -0.063 -1.610 Gyro: +2.668 +3.747 -1.408[0m
+
+[0;32mI (104279) test: Accel: +0.020 +0.029 -0.329 Gyro: -24.436 +0.607 -6.161[0m
+
+[0;32mI (105279) test: Accel: -0.081 -0.027 +0.298 Gyro: +24.659 -5.946 +3.086[0m
+
+[0;32mI (106279) test: Accel: -0.127 -0.161 +0.022 Gyro: -0.941 +2.511 +0.232[0m
+
+[0;32mI (107279) test: Accel: -0.145 -0.175 -0.014 Gyro: -0.312 -0.178 -0.153[0m
+
+[0;32mI (108279) test: Accel: -0.123 -0.173 -0.020 Gyro: -0.010 -0.522 -0.462[0m
+
+[0;32mI (109279) test: Accel: -0.167 -0.171 -0.014 Gyro: +0.047 -0.022 +0.442[0m
+
+[0;32mI (110279) test: Accel: -0.121 -0.149 +0.009 Gyro: +1.706 -0.239 +0.011[0m
+
+[0;32mI (111279) test: Accel: -0.127 -0.132 -0.018 Gyro: +0.497 -0.304 +0.187[0m
+
+[0;32mI (112279) test: Accel: -0.144 -0.128 -0.020 Gyro: -0.182 -0.091 +0.126[0m
+
+[0;32mI (113279) test: Accel: -0.139 -0.111 -0.014 Gyro: -0.029 -0.335 +0.354[0m
+
+[0;32mI (114279) test: Accel: -0.134 -0.110 -0.014 Gyro: +0.196 -0.201 +0.385[0m
+
+[0;32mI (115279) test: Accel: -0.111 -0.110 -0.025 Gyro: -0.556 -0.098 -0.538[0m
+
+[0;32mI (116279) test: Accel: -0.098 -0.080 -0.201 Gyro: -0.052 +0.714 +2.220[0m
+
+[0;32mI (117279) test: Accel: -0.261 +0.027 -0.380 Gyro: -0.163 -14.484 +1.949[0m
+
+[0;32mI (118279) test: Accel: +0.003 -0.000 +0.003 Gyro: +0.009 -0.003 +0.011[0m
+
+[0;32mI (119279) test: Accel: +0.003 -0.000 +0.000 Gyro: +0.009 +0.020 -0.000[0m
+
+[0;32mI (120279) test: Accel: +0.004 -0.002 +0.003 Gyro: +0.009 +0.050 +0.007[0m
+
+[0;32mI (121279) test: Accel: +0.004 -0.001 +0.001 Gyro: -0.014 -0.026 +0.004[0m
+
+[0;32mI (122279) test: Accel: +0.003 +0.001 +0.001 Gyro: -0.014 +0.012 -0.008[0m
+
+[0;32mI (123279) test: Accel: +0.003 -0.001 +0.001 Gyro: +0.005 -0.014 +0.011[0m
+
+[0;32mI (124279) test: Accel: +0.004 -0.001 +0.001 Gyro: +0.028 +0.024 -0.000[0m
+
+[0;32mI (125279) test: Accel: +0.004 -0.001 +0.002 Gyro: +0.013 +0.009 +0.007[0m
+
+[0;32mI (126279) test: Accel: +0.263 +0.200 +0.535 Gyro: -10.379 +4.292 +0.560[0m
+
+[0;32mI (127279) test: Accel: +0.157 -0.081 -0.071 Gyro: -1.250 -0.285 -0.313[0m
+
+[0;32mI (128279) test: Accel: +0.175 -0.004 +0.033 Gyro: -0.209 -2.078 +0.282[0m
+
+[0;32mI (129279) test: Accel: +0.239 +0.048 -0.049 Gyro: +6.665 -6.324 +0.065[0m
+
+[0;32mI (130279) test: Accel: -0.003 -0.002 -0.005 Gyro: +0.005 +0.108 +0.011[0m
+
+[0;32mI (131279) test: Accel: +0.003 -0.003 +0.002 Gyro: -0.003 +0.001 +0.015[0m
+
+[0;32mI (132279) test: Accel: +0.006 -0.003 +0.002 Gyro: +0.013 -0.003 +0.011[0m
+

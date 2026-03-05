@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/CMakeFiles/bootloader
+/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/CMakeFiles/bootloader.rule
+/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/CMakeFiles/bootloader-complete.rule
+/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

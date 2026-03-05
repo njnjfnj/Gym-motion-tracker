@@ -1,0 +1,4 @@
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4200ae34: [0;33mriscv_decode_offset_from_jal_instruction[0m[0m at [0;32m/home/sergey/esp-idf/components/riscv/instruction_decode.c[0m[0m:[1;31m26[0m
+[0m

@@ -1,0 +1,64 @@
+[0;32mI (124) esp_image: segment 4: paddr=0003c3a0 vaddr=40383f00 sizeW (285) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200ae34
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f58
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  5 2026 17:28:13[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0adech ( 44524) map[0m
+[0;32mI (90) esp_image: segment 1: paddr=0001ae14 vaddr=3fc8c000 size=012fch (  4860) load[0m
+[0;32mI (92) esp_image: segment 2: paddr=0001c118 vaddr=40380000 size=03f00h ( 16128) load[0m
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c378h (115576) map[0m
+[0;32mI (124) esp_image: segment 4: paddr=0003c3a0 vaddr=40383f00 size=07f98h ( 32664) load[0m
+[0;32mI (130) esp_image: segment 5: paddr=00044340 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (134) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (135) boot: Disabling RNG early entropy source...[0m
+[0;32mI (149) cpu_start: Unicore app[0m
+[0;32mI (157) cpu_start: Pro cpu start user code[0m
+[0;32mI (157) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (157) app_init: Application information:[0m
+[0;32mI (158) app_init: Project name:     blink[0m
+[0;32mI (161) app_init: App version:      1[0m
+[0;32mI (164) app_init: Compile time:     Mar  5 2026 17:28:06[0m
+[0;32mI (169) app_init: ELF file SHA256:  868503f25...[0m
+[0;32mI (174) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (177) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (181) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (185) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (189) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (195) heap_init: At 3FC8E200 len 00031E00 (199 KiB): RAM[0m
+[0;32mI (200) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (206) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (212) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (219) spi_flash: detected chip: generic[0m
+[0;32mI (221) spi_flash: flash io: dio[0m
+[0;33mW (224) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (237) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (243) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (250) main_task: Started on CPU0[0m
+[0;32mI (250) main_task: Calling app_main()[0m
+[0;32mI (250) test: CONFIGURING BMI160[0m
+[0;32mI (250) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (260) i2cdev: [Port 0] First initialization. Configuring bus with SDA=3, SCL=4 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (270) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (290) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3fc907a8).[0m
+[0;32mI (290) i2cdev: [0x69 at 0] Device added successfully (Device Handle: 0x3fc90c70, Speed: 1000000 Hz).[0m
+Device ID: 0xd1
