@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "blink",
-    "project_version":    "1",
+    "project_version":    "f6a7872-dirty",
     "project_path":       "/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker",
     "idf_path":           "/home/sergey/esp-idf",
     "build_dir":          "/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build",
@@ -1255,8 +1255,8 @@
             "managed_reqs": [],
             "managed_priv_reqs": [ "esp-idf-lib__bmi160", "espressif__led_strip" ],
             "file": "/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/main/main.c" ],
-            "include_dirs": [ "." ]
+            "sources": [ "/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/main/main.c", "/home/sergey/Documents/work/Ірпінь/Gym-motion-tracker/main/BMI160_task/BMI160_task.c" ],
+            "include_dirs": [ ".", "./BMI160_task" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2890,7 +2890,7 @@
             "priv_reqs": [ "esp-idf-lib__bmi160", "espressif__led_strip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "esp-idf-lib__bmi160", "espressif__led_strip" ],
-            "include_dirs": [ "." ]
+            "include_dirs": [ ".", "./BMI160_task" ]
         },
         "esp-idf-lib__bmi160": {
             "alias": "idf::esp-idf-lib__bmi160",
